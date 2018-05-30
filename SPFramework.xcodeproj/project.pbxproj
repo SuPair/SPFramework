@@ -6,10 +6,28 @@
 	objectVersion = 50;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		CFC966AC20BE6E2800934C6A /* SPTarget */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = CFC966AD20BE6E2800934C6A /* Build configuration list for PBXAggregateTarget "SPTarget" */;
+			buildPhases = (
+				CFC966B020BE6E2F00934C6A /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = SPTarget;
+			productName = SPTarget;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
+		CF3603B920BEEBBC009B38B2 /* NSObject+Helper.h in Headers */ = {isa = PBXBuildFile; fileRef = CF3603B720BEEBBC009B38B2 /* NSObject+Helper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CF3603BA20BEEBBC009B38B2 /* NSObject+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3603B820BEEBBC009B38B2 /* NSObject+Helper.m */; };
 		CFC9669420BE6CDC00934C6A /* SPFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFC9668A20BE6CDC00934C6A /* SPFramework.framework */; };
 		CFC9669920BE6CDC00934C6A /* SPFrameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC9669820BE6CDC00934C6A /* SPFrameworkTests.m */; };
 		CFC9669B20BE6CDC00934C6A /* SPFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = CFC9668D20BE6CDC00934C6A /* SPFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CFC966A720BE6D2100934C6A /* UIView+Helper.h in Headers */ = {isa = PBXBuildFile; fileRef = CFC966A520BE6D2000934C6A /* UIView+Helper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CFC966A820BE6D2100934C6A /* UIView+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC966A620BE6D2000934C6A /* UIView+Helper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +41,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CF3603B720BEEBBC009B38B2 /* NSObject+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Helper.h"; sourceTree = "<group>"; };
+		CF3603B820BEEBBC009B38B2 /* NSObject+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Helper.m"; sourceTree = "<group>"; };
 		CFC9668A20BE6CDC00934C6A /* SPFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SPFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFC9668D20BE6CDC00934C6A /* SPFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPFramework.h; sourceTree = "<group>"; };
 		CFC9668E20BE6CDC00934C6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CFC9669320BE6CDC00934C6A /* SPFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SPFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFC9669820BE6CDC00934C6A /* SPFrameworkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPFrameworkTests.m; sourceTree = "<group>"; };
 		CFC9669A20BE6CDC00934C6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFC966A520BE6D2000934C6A /* UIView+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Helper.h"; sourceTree = "<group>"; };
+		CFC966A620BE6D2000934C6A /* UIView+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Helper.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +72,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CF3603B620BEEB93009B38B2 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				CF3603B720BEEBBC009B38B2 /* NSObject+Helper.h */,
+				CF3603B820BEEBBC009B38B2 /* NSObject+Helper.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
 		CFC9668020BE6CDC00934C6A = {
 			isa = PBXGroup;
 			children = (
@@ -71,6 +102,8 @@
 		CFC9668C20BE6CDC00934C6A /* SPFramework */ = {
 			isa = PBXGroup;
 			children = (
+				CF3603B620BEEB93009B38B2 /* Tools */,
+				CFC966A420BE6CE500934C6A /* UITools */,
 				CFC9668D20BE6CDC00934C6A /* SPFramework.h */,
 				CFC9668E20BE6CDC00934C6A /* Info.plist */,
 			);
@@ -86,6 +119,15 @@
 			path = SPFrameworkTests;
 			sourceTree = "<group>";
 		};
+		CFC966A420BE6CE500934C6A /* UITools */ = {
+			isa = PBXGroup;
+			children = (
+				CFC966A520BE6D2000934C6A /* UIView+Helper.h */,
+				CFC966A620BE6D2000934C6A /* UIView+Helper.m */,
+			);
+			path = UITools;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -94,6 +136,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFC9669B20BE6CDC00934C6A /* SPFramework.h in Headers */,
+				CFC966A720BE6D2100934C6A /* UIView+Helper.h in Headers */,
+				CF3603B920BEEBBC009B38B2 /* NSObject+Helper.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,6 +195,9 @@
 					CFC9669220BE6CDC00934C6A = {
 						CreatedOnToolsVersion = 9.3;
 					};
+					CFC966AC20BE6E2800934C6A = {
+						CreatedOnToolsVersion = 9.3;
+					};
 				};
 			};
 			buildConfigurationList = CFC9668420BE6CDC00934C6A /* Build configuration list for PBXProject "SPFramework" */;
@@ -167,6 +214,7 @@
 			targets = (
 				CFC9668920BE6CDC00934C6A /* SPFramework */,
 				CFC9669220BE6CDC00934C6A /* SPFrameworkTests */,
+				CFC966AC20BE6E2800934C6A /* SPTarget */,
 			);
 		};
 /* End PBXProject section */
@@ -188,11 +236,29 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		CFC966B020BE6E2F00934C6A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/sh\n#要build的target名\nTARGET_NAME=${PROJECT_NAME}\nif [[ $1 ]]\nthen\nTARGET_NAME=$1\nfi\nUNIVERSAL_OUTPUT_FOLDER=\"${SRCROOT}/${PROJECT_NAME}/\"\n\n#创建输出目录，并删除之前的framework文件\nmkdir -p \"${UNIVERSAL_OUTPUT_FOLDER}\"\nrm -rf \"${UNIVERSAL_OUTPUT_FOLDER}/${TARGET_NAME}.framework\"\n\n#分别编译模拟器和真机的Framework\nxcodebuild -target \"${TARGET_NAME}\" ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\nxcodebuild -target \"${TARGET_NAME}\" ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphonesimulator BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\n\n#拷贝framework到univer目录\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${TARGET_NAME}.framework\" \"${UNIVERSAL_OUTPUT_FOLDER}\"\n\n#合并framework，输出最终的framework到build目录\nlipo -create -output \"${UNIVERSAL_OUTPUT_FOLDER}/${TARGET_NAME}.framework/${TARGET_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${TARGET_NAME}.framework/${TARGET_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${TARGET_NAME}.framework/${TARGET_NAME}\"\n\n#删除编译之后生成的无关的配置文件\ndir_path=\"${UNIVERSAL_OUTPUT_FOLDER}/${TARGET_NAME}.framework/\"\nfor file in ls $dir_path\ndo\nif [[ ${file} =~ \".xcconfig\" ]]\nthen\nrm -f \"${dir_path}/${file}\"\nfi\ndone\n#判断build文件夹是否存在，存在则删除\nif [ -d \"${SRCROOT}/build\" ]\nthen\nrm -rf \"${SRCROOT}/build\"\nfi\nrm -rf \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos\"\n#打开合并后的文件夹\nopen \"${UNIVERSAL_OUTPUT_FOLDER}\"\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CFC9668520BE6CDC00934C6A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF3603BA20BEEBBC009B38B2 /* NSObject+Helper.m in Sources */,
+				CFC966A820BE6D2100934C6A /* UIView+Helper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +479,24 @@
 			};
 			name = Release;
 		};
+		CFC966AE20BE6E2800934C6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J87CN7373S;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CFC966AF20BE6E2800934C6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J87CN7373S;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -439,6 +523,15 @@
 			buildConfigurations = (
 				CFC966A220BE6CDC00934C6A /* Debug */,
 				CFC966A320BE6CDC00934C6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFC966AD20BE6E2800934C6A /* Build configuration list for PBXAggregateTarget "SPTarget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFC966AE20BE6E2800934C6A /* Debug */,
+				CFC966AF20BE6E2800934C6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

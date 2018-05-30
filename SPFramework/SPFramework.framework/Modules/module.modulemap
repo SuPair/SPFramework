@@ -1,0 +1,6 @@
+framework module SPFramework {
+  umbrella header "SPFramework.h"
+
+  export *
+  module * { export * }
+}
