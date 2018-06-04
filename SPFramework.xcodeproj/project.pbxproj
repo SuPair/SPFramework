@@ -23,6 +23,8 @@
 /* Begin PBXBuildFile section */
 		CF3603B920BEEBBC009B38B2 /* NSObject+Helper.h in Headers */ = {isa = PBXBuildFile; fileRef = CF3603B720BEEBBC009B38B2 /* NSObject+Helper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CF3603BA20BEEBBC009B38B2 /* NSObject+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3603B820BEEBBC009B38B2 /* NSObject+Helper.m */; };
+		CF36048E20C0DEBE009B38B2 /* UIViewController+Helper.h in Headers */ = {isa = PBXBuildFile; fileRef = CF36048C20C0DEBE009B38B2 /* UIViewController+Helper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CF36048F20C0DEBE009B38B2 /* UIViewController+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = CF36048D20C0DEBE009B38B2 /* UIViewController+Helper.m */; };
 		CFC9669420BE6CDC00934C6A /* SPFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFC9668A20BE6CDC00934C6A /* SPFramework.framework */; };
 		CFC9669920BE6CDC00934C6A /* SPFrameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC9669820BE6CDC00934C6A /* SPFrameworkTests.m */; };
 		CFC9669B20BE6CDC00934C6A /* SPFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = CFC9668D20BE6CDC00934C6A /* SPFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -43,6 +45,8 @@
 /* Begin PBXFileReference section */
 		CF3603B720BEEBBC009B38B2 /* NSObject+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Helper.h"; sourceTree = "<group>"; };
 		CF3603B820BEEBBC009B38B2 /* NSObject+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Helper.m"; sourceTree = "<group>"; };
+		CF36048C20C0DEBE009B38B2 /* UIViewController+Helper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Helper.h"; sourceTree = "<group>"; };
+		CF36048D20C0DEBE009B38B2 /* UIViewController+Helper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Helper.m"; sourceTree = "<group>"; };
 		CFC9668A20BE6CDC00934C6A /* SPFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SPFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFC9668D20BE6CDC00934C6A /* SPFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPFramework.h; sourceTree = "<group>"; };
 		CFC9668E20BE6CDC00934C6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -124,6 +128,8 @@
 			children = (
 				CFC966A520BE6D2000934C6A /* UIView+Helper.h */,
 				CFC966A620BE6D2000934C6A /* UIView+Helper.m */,
+				CF36048C20C0DEBE009B38B2 /* UIViewController+Helper.h */,
+				CF36048D20C0DEBE009B38B2 /* UIViewController+Helper.m */,
 			);
 			path = UITools;
 			sourceTree = "<group>";
@@ -138,6 +144,7 @@
 				CFC9669B20BE6CDC00934C6A /* SPFramework.h in Headers */,
 				CFC966A720BE6D2100934C6A /* UIView+Helper.h in Headers */,
 				CF3603B920BEEBBC009B38B2 /* NSObject+Helper.h in Headers */,
+				CF36048E20C0DEBE009B38B2 /* UIViewController+Helper.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +266,7 @@
 			files = (
 				CF3603BA20BEEBBC009B38B2 /* NSObject+Helper.m in Sources */,
 				CFC966A820BE6D2100934C6A /* UIView+Helper.m in Sources */,
+				CF36048F20C0DEBE009B38B2 /* UIViewController+Helper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

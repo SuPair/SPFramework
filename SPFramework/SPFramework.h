@@ -18,4 +18,6 @@ FOUNDATION_EXPORT const unsigned char SPFrameworkVersionString[];
 
 #import <SPFramework/UIView+Helper.h>
 #import <SPFramework/NSObject+Helper.h>
+#import <SPFramework/UIViewController+Helper.h>
+
 
