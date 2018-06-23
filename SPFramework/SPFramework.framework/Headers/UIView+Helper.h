@@ -15,6 +15,10 @@ typedef NS_ENUM(NSInteger, SPViewBorderDirection){
     SPViewBorderDirectionBottom,
 };
 
+static NSString *const SPKeyPathCustom = @"kSPKeyPathCustom";
+static NSString *const SPKeyPathCustomKey = @"kSPKeyPathCustomKey";
+static NSString *const SPKeyPathCustomValue = @"kSPKeyPathCustomValue";
+
 @interface UIView (Helper)
 
 

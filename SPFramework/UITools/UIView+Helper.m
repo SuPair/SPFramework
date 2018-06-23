@@ -68,9 +68,37 @@
             if ([data.allKeys containsObject:name]) {
                 [self setValue:[UIImage imageNamed:data[name]] forKeyPath:path];
             }
+        }else if ([[NSString stringWithUTF8String:type] containsString:@"Slider"]){
+            NSString *path = [NSString stringWithFormat:@"%@.value", name];
+            if ([data.allKeys containsObject:name]) {
+                [self setValue:[NSNumber numberWithFloat:[data[name] floatValue]] forKeyPath:path];
+            }
+        }else{
+            
+            //判断是否含有自定义命令
+            if ([data[name] isKindOfClass:[NSDictionary class]]) {
+                NSDictionary *tempDir = data[name];
+                if ([tempDir.allKeys containsObject:SPKeyPathCustom]) {
+                    NSArray *cmds = data[SPKeyPathCustom];
+                    for (NSDictionary *dir in cmds) {
+                        if ([dir.allKeys containsObject:SPKeyPathCustomKey] && [dir.allKeys containsObject:SPKeyPathCustomValue]) {
+                            NSString *path = [NSString stringWithFormat:@"%@.%@", name, dir[SPKeyPathCustomKey]];
+                            [self setValue:dir[SPKeyPathCustomValue] forKeyPath:path];
+                        }
+                    }
+                }
+            }else{
+                NSString *path = [NSString stringWithFormat:@"%@", name];
+                if ([data.allKeys containsObject:name]) {
+                    [self setValue:data[name] forKeyPath:path];
+                }
+            }
+            
         }
     }
     free(properties);
+    //自定义命令执行
+    
 }
 
 - (void)sp_setBorderWithBorderDirection:(SPViewBorderDirection)direction Color:(UIColor *)color{

@@ -10,11 +10,15 @@
 		</data>
 		<key>Headers/SPFramework.h</key>
 		<data>
-		oRITZwWK42fH0WN/YtqM/fV46n4=
+		4gBAcabIt3YTKuUlZ4fPNSllSWA=
 		</data>
 		<key>Headers/UIView+Helper.h</key>
 		<data>
-		N08FFUZLqWyVPJDJ0aDRMpLF4mQ=
+		oG64REI/io4yVgw1Th8KHGoywos=
+		</data>
+		<key>Headers/UIViewController+Helper.h</key>
+		<data>
+		UqQ6EMBjg3mSBh0Qhay6HYK27RE=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -42,22 +46,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			oRITZwWK42fH0WN/YtqM/fV46n4=
+			4gBAcabIt3YTKuUlZ4fPNSllSWA=
 			</data>
 			<key>hash2</key>
 			<data>
-			gjiPonXehjZLoxkuF7wbaNGEV1pWZWVcyLgpc7D5WTc=
+			bvHpGiortNt0vzDvIPZL7hqow/fDH8+WFOkimfYZ94o=
 			</data>
 		</dict>
 		<key>Headers/UIView+Helper.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			N08FFUZLqWyVPJDJ0aDRMpLF4mQ=
+			oG64REI/io4yVgw1Th8KHGoywos=
 			</data>
 			<key>hash2</key>
 			<data>
-			8vucl0JEhEKJPKB04U2oVY9S/isSFnl+yGHi9wP89Tk=
+			cuj1p7PRRF486tSDj3PyhS8SdgBgKEglB3N17or0y34=
+			</data>
+		</dict>
+		<key>Headers/UIViewController+Helper.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			UqQ6EMBjg3mSBh0Qhay6HYK27RE=
+			</data>
+			<key>hash2</key>
+			<data>
+			VsBnZ+FdJQwsmsH4S3bJpYQ7msXZbA0CovZC4s5YD0E=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
