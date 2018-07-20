@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
+static NSString *const SPCustomKeyPath          = @"kSPCustomKeyPath";
+static NSString *const SPCustomKeyPathValue     = @"kSPCustomKeyPathValue";
+
 @interface NSObject (Helper)
 
 /**
@@ -26,4 +29,13 @@
  @param aCoder NSCoder实例
  */
 + (void)sp_encodeClass:(id)object encoder:(NSCoder *)aCoder;
+
+
+/**
+ 设置keypath通过给定的数据进行设置
+
+ @param data 需要设置的key-value 字典
+ @param isCustomPriority 设置自定义优先级是否高于默认的
+ */
+- (void)sp_setKeyPathValueByData:(NSMutableDictionary *)data IsCustomPriority:(BOOL)isCustomPriority;
 @end

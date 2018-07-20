@@ -70,7 +70,7 @@ static NSString *const SPKeyPathCustomValue = @"kSPKeyPathCustomValue";
 
  @param data 数据键值对{view属性名：值}
  */
-- (void)sp_initilizeWithData:(NSMutableDictionary *)data;
+- (void)sp_initilizeWithData:(NSMutableDictionary *)data;DEPRECATED_MSG_ATTRIBUTE("这个函数命名和实现不太规范，现已经修改为另一个函数'(void)sp_setKeyPathValueByData:(NSMutableDictionary *)data IsCustomPriority:(BOOL)isCustomPriority'来替换");
 
 
 /**
